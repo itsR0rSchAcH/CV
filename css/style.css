@@ -1,0 +1,306 @@
+/*===============================================================GLOBALE================================================================*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+	background: linear-gradient(135deg, rgb(28, 128, 158) 0%, rgb(131, 24, 117) 100%);
+    font-size: 20px;
+}
+
+h1, h2, h3, h4, a, p, .principale, .secondaire{
+    font-family: Trebuchet MS, sans-serif;
+    color:rgb(0, 0, 0);
+}
+
+li, p, a, .profile, .info, .principale, .secondaire{
+    color:cornsilk;
+
+}
+
+* ul>li {
+    list-style: none;
+}
+
+h1{
+    font-size: 2rem;
+    /* max(4vw, 35px)  */
+    font-weight: 1000;
+
+    text-align: center;             /* alignement horizontal d'un élément de bloc */
+}
+h2{
+    font-size: 1.5rem;
+    /* max(3vw, 25px)  */
+    font-weight: 900;
+    color:rgb(255, 255, 255);
+    margin: max(25px, 8vw);
+
+}
+
+h3{
+    font-size: 1.2rem;
+}
+
+h4{
+    font-size: 1.5rem;
+    font-weight: 1000;
+
+    text-align: center;             /*ALERTE  alignement horizontal d'un élément de bloc */
+}
+
+li{
+    font-size: 1rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+p{
+    font-weight: 600;
+}
+
+
+
+/*===============================================================HEADER================================================================*/
+
+
+header{
+    background-image: url("https://srv-peda2.iut-acy.univ-smb.fr/lechappr/img/banner500x192.webp");
+    background-size: cover;
+    border-bottom: solid rgb(0, 0, 0) 5px;
+
+    display:flex;    
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 3%;
+    margin-bottom: 3%;
+}
+
+header nav ul li {
+    display: inline-flex;
+    background-color: rgb(0, 0, 0);
+
+    border: solid 0.5rem #000000;
+    margin: 0.5rem;
+
+    transition: ease 1s;
+}
+
+nav ul li:hover{
+    background-color: rgb(33, 10, 114);
+    border: solid rgb(33, 10, 114) 0.5rem;
+    box-shadow: 
+    3px 3px #000000,
+    4px 4px #000000,
+    5px 5px #000000,
+    6px 6px #000000,
+    7px 7px #000000;
+}
+
+nav{
+    display: flex;
+    margin: auto;
+}
+
+.block>ul>li>a{
+    background-color: rgb(13, 13, 54);
+
+    display: inline-flex;       /*L'élément se comporte comme un élément en ligne et organise son propre contenu selon le modèle des boîtes flexibles.*/
+    padding: 4%;
+
+    cursor: pointer;
+    transition: all 0.2s ease 0.2s;
+}
+
+
+
+nav ul li a {
+    font-size:  0.9rem;
+    font-weight: 700;
+    font-family: Andale Mono, monospace;
+}
+
+
+.info>h2{
+    color: black;
+}
+
+/*===============================================================PROFIL================================================================*/
+
+.photo-profile{
+    border-radius: 50%;
+    border: 0.35rem solid rgb(0, 0, 0);
+
+  }
+  
+.contacte{
+    justify-content: center;                 /*indique la façon dont l'espace doit être réparti entre et autour des éléments*/
+
+}
+
+.contacte li a {
+    padding: 0.2rem;
+}
+  
+  .profile, .info{
+    float: left;                 /* retire du flux normal et place sur le côté gauche de son conteneur l'image, prenom nom et decription*/
+  }
+  
+  .profile{
+    width: 40%;
+    text-align: center;
+    padding: 50px 20px 60px;
+  }
+  
+  .profile p{
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #000000;
+  }
+  
+  .info{
+    font-size: 1.2rem;
+    line-height: 45px;                 /* interligne*/ 
+
+    justify-items: center;
+    width: 60%;
+
+    padding: 20px 60px;
+    margin: 50px 0;
+    border-left: 2px solid rgb(0, 0, 0);
+  }
+  
+  .info ul{
+    display: flex;
+    flex-wrap:wrap ;
+    margin: 40px 0 ;
+  }
+  
+  .info li{
+    font-weight: 600;
+    background-color: rgb(42, 4, 114);
+    border-radius: 10px;
+
+    display: flex;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+  }
+
+  .info p{
+      color: #000000;
+      font-weight: 500;
+  }
+
+
+/*===============================================================FORMATION / EXPERIENCE PRO.================================================================*/
+
+.triche{
+    width: 1px;
+    height: 2vw;
+}
+
+.triche2{
+    display: none;
+}
+
+
+article ul{
+    line-height: 1.5rem;   
+    font-size: 1rem;
+    background-color: rgba(39, 9, 93, 0.856);
+
+    margin: 0.5rem auto;
+    padding: max(15px, 3vh);
+    border-radius: 15px;
+    width: 80%;
+}
+
+.principale{
+    font-weight: bold;
+}
+
+.secondaire{
+    font-weight: lighter;
+}
+
+
+
+/*===============================================================COMPETENCE / LANGUES================================================================*/
+.description_barre{
+    font-size: 1rem;
+
+    display: inline-block;
+    margin: 0.5rem;
+}
+
+.pourcentage{
+    font-size: 1rem;
+
+    display: inline-block;
+    margin: 0.5rem;
+
+    position: absolute;
+    right: 50%;
+}
+
+.remplissage_barre{
+    background-color: rgb(42, 4, 114);
+    border-radius: 15px;
+
+    width: 85%;
+    margin:max(20px, 2vw) auto ;
+    padding: max(15px ,1.5vw);
+}
+
+
+.p45 {
+    width: 45%;
+    background-color: rgb(29, 63, 195);
+}
+
+.p75 {
+    width: 75%;
+    background-color: rgb(29, 62, 195);
+}
+
+.p80{
+    width: 80%;
+    background-color: rgb(29, 63, 195);
+}
+
+.p90{
+    width: 90%;
+    background-color: rgba(29, 63, 195);
+}
+
+.p95 {
+    width: 95%;
+    background-color: rgb(29, 63, 195);
+}
+
+.conteneur_barre {
+    height: max(20px, 4vw); /* hauteur du curseur */
+    width: 90%;
+    margin: auto;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+}
+
+.barre {
+    display: block;
+    height: 100%;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-radius: 5px;
+}
+.print{
+    visibility: hidden;
+    width: 1px;
+    height: 1px;
+}
+

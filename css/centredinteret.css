@@ -1,0 +1,173 @@
+/*===============================================================GLOBALE================================================================*/
+
+* {
+	margin: 0;
+    padding: 0;
+	box-sizing: border-box;
+}
+
+* ul>li {
+    list-style: none;
+}
+html{
+	font-size: 20px;
+	background: linear-gradient(135deg, rgb(28, 128, 158) 0%, rgb(131, 24, 117) 100%);
+	font-family: Trebuchet MS, sans-serif;
+}
+/*===============================================================HEADER================================================================*/
+header{
+    background-image: url("https://srv-peda2.iut-acy.univ-smb.fr/lechappr/img/banner500x192.webp");
+    background-size: cover;
+    padding: 2%;
+	border-bottom: solid rgb(0, 0, 0) 5px;
+}
+
+nav{
+    margin: auto;
+	text-align: center;
+}
+nav ul li a{
+	font-family: Andale Mono, monospace;
+	text-decoration: none;
+    color:cornsilk;
+    font-weight: 700;
+}
+
+nav ul li a:hover{
+	background-color: rgb(23, 4, 92);
+}
+
+nav ul li {
+    display: inline-block;
+    background-color: rgb(0, 0, 0);
+	padding: 15px;
+	margin: 10px 4vw;
+
+    transition: all 0.3s ease 0.2s;
+    /*all effet d'apparition des element qui dure 1s*/
+    /*ease - temsp avant l'apparition de l'effect*/
+}
+
+nav ul li:hover{
+    background-color: rgb(23, 4, 92);
+
+    box-shadow: 
+    3px 3px #000000,
+    4px 4px #000000,
+    5px 5px #000000,
+    6px 6px #000000,
+    7px 7px #000000;
+}
+
+
+/*===============================================================INTRO================================================================*/
+
+h1{
+    font-size: 2rem;
+    font-weight: 1000;
+	margin:15px;
+    text-align: center;             /* alignement horizontal d'unélément de bloc */
+}
+
+h1+p, h3{
+	font-size: 1.2rem;
+	width: 90%;
+	margin: 1.5rem;
+	color: aliceblue;
+}
+
+
+
+
+/*===============================================================SLIDE================================================================*/
+
+section{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+
+.container{
+	display: inline-block;
+	width: 18rem;
+	height: 24rem;
+
+    line-height: 1.5rem;   
+    font-size: 1rem;
+    background-color: rgba(39, 9, 93, 0.856);
+
+    margin: 0.5rem;
+	border-radius: 15px;
+}
+
+article h2{
+	font-size: 1.3rem;
+	font-family: Trebuchet MS, sans-serif;
+	font-weight: 300;
+	margin: 1rem;
+	padding: 1rem;
+    color:rgb(255, 255, 255);
+	text-align: center;
+}
+
+.slider {
+	overflow: hidden;   /* ce qui depasse n'apparait pas */
+}
+
+
+.slider figure {
+	position: relative;
+	width: 200%;
+	animation: 10s slider infinite;
+}
+
+.slider figure img {
+	width: 50%;
+	float: left;
+}
+
+figcaption {
+	width:50%;
+	float:right;
+    background-color: #222;
+    color: #fff;
+    font: italic smaller sans-serif;
+    padding: 23px;
+    text-align: center;
+	border-bottom-right-radius: 15px;
+	border-bottom-left-radius: 15px;
+}
+
+
+
+
+
+@keyframes slider {
+	0% {
+		left: 0;
+	}
+	45% {
+		left: 0;
+	}
+	50% {
+		left: -100%;
+	}
+	95% {
+		left: -100%;
+	}
+	100% {
+		left: 0;
+	}
+}
+
+
+video{
+	display: block;
+	width: 90%;
+	margin: auto;
+	text-align: center;
+
+}
+
+

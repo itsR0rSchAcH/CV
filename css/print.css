@@ -1,0 +1,29 @@
+@media print {
+
+
+    /*==============GLOBAL==============*/
+    @page {
+        margin: 1cm;
+        size: 210mm 297mm;
+    }
+
+    header, main{
+        display: none;
+    }
+    .print{
+        visibility: visible;
+        width: 100%;
+        height:100%;
+    }
+
+
+
+
+
+
+
+
+
+
+
+}

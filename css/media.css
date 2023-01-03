@@ -1,0 +1,201 @@
+@media only screen and (max-width: 820px){
+
+
+    .photo-profile{
+        border-radius: 50%;
+        border: -1.5em solid rgb(0, 0, 0);
+        justify-content: center;
+        text-align: center;
+        margin: auto;
+        justify-items: center;
+      }
+    .profile, .info{
+      float: none;
+      display: block;
+      width: 100%;
+    }
+  
+    .profile{
+      padding-bottom: 0;
+    }
+
+  
+    .info{
+      margin: 20px 0;
+      padding: 0 60px 30px;
+      text-align: center;
+      border-left: 0;
+    }
+  
+    .info h1{
+      display: none;
+    }
+  
+    .info ul{
+      position: static;
+      margin-top: 50px;
+      text-align: center;
+    }
+  
+    .info li{
+      float: none;
+      display: inline-block;
+    }}
+
+
+@media only screen and (max-width: 320px)
+{
+  html{
+    font-size: 10px;
+  }
+
+  .info{
+    font-size: 1.2rem;
+    line-height: 15px;                 /* interligne*/ 
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+  }
+
+  .pourcentage{
+    display: inline-block;
+    position: absolute;
+    right: 20%;
+  }
+}
+
+@media only screen and (min-width: 321px) and (max-width: 499px){
+  html{
+    font-size: 15px;
+  }
+  .pourcentage{
+    right: 20%;
+  }
+}
+
+
+
+
+@media only screen and (min-width: 500px) and (max-width: 820px){
+
+  html{
+    font-size: 20px;
+  }
+
+  .profile{
+    margin-bottom: 100px;
+}
+
+.pourcentage{
+  display: inline-block;
+  position: absolute;
+  right: 20%;
+}
+
+
+
+.remplissage_barre{
+  margin :1vh auto ;
+  padding: 3vh;
+}
+
+.conteneur_barre {
+  height: 30px; /* hauteur du curseur */
+}
+}
+
+
+@media only screen and (min-width: 820px) and (max-width: 950px)
+{
+  html{
+    font-size: 20px;
+  }
+}
+
+@media only screen and (min-width: 951px) and (max-width: 1500px){
+  html{
+    font-size: 20px;
+  }
+  .conteneur_barre {
+    height: 30px; /* hauteur du curseur */
+  }
+}
+
+@media only screen and (min-width: 1501px){
+  html{
+    font-size: 25px;
+  }
+
+  .conteneur_barre {
+    height: 30px; /* hauteur du curseur */
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 820px){
+
+
+  .photo-profile{
+      border-radius: 50%;
+      border: -1.5em solid rgb(0, 0, 0);
+      justify-content: center;
+      text-align: center;
+      margin: auto;
+      justify-items: center;
+    }
+  .profile, .info{
+    float: none;
+    display: block;
+    width: 100%;
+  }
+
+  .profile{
+    padding-bottom: 0;
+  }
+
+
+  .info{
+    margin: 20px 0;
+    padding: 0 60px 30px;
+    text-align: center;
+    border-left: 0;
+  }
+
+  .info h1{
+    display: none;
+  }
+
+  .info ul{
+    position: static;
+    margin-top: 50px;
+    text-align: center;
+  }
+
+  .info li{
+    float: none;
+    display: inline-block;
+  }}
+
+  
